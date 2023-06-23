@@ -1,0 +1,36 @@
+#root {
+  /* background-color: #323232; */
+  /* max-width: 1280px; */
+  height: 820px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+h1{
+  color: black;
+  font-family: garamond;
+  text-shadow: 0.5px 0.5px 10px rgb(109, 88, 4);
+}
+
+.logo {
+  height: 6em;
+  will-change: filter;
+  transition: filter 300ms;
+  animation: spin 10s linear infinite;
+}
+
+.logo.moneyway:hover {
+  filter: drop-shadow(0 0 2em rgb(109, 88, 4));
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
