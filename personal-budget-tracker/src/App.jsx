@@ -20,7 +20,7 @@ function App() {
         <TransactionsList key={index} transactions={transaction} />
       ))}
     </div>
-
+    
     </>
   )
 }

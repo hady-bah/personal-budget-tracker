@@ -19,6 +19,10 @@ const transactions =[
         amount: 500,
         description: 'Salary', 
     },
+    {
+        amount: 14.65,
+        description: 'UberEats', 
+    },
 ];
 
 export default transactions;

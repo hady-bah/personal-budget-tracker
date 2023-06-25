@@ -17,13 +17,4 @@
     font-size: 20px;
     font-family: fantasy;
 }
-.sidebar {
-    width: 200px;
-    background-color: rgb(29, 29, 29);
-    position: fixed;
-    left: 2;
-    top: 5;
-    height: 75%;
-    padding: 20px;
-    border-radius: 30px;
-  }
+
