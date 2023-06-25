@@ -1,8 +1,10 @@
 #list{
-    background-color: rgb(48, 48, 48);
-    border-radius: 10px;
-    padding: 10px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 30px;
+    padding: 5px;
     display: inline-block; 
+    min-width: 100px;
+    /* min-height: 30px; */
     
 }
 #amount{
@@ -11,7 +13,17 @@
     font-family: fantasy;
 }
 #description{
-    color: rgb(255, 255, 255);
+    color: #8484ab;
     font-size: 20px;
     font-family: fantasy;
 }
+.sidebar {
+    width: 200px;
+    background-color: rgb(29, 29, 29);
+    position: fixed;
+    left: 2;
+    top: 5;
+    height: 75%;
+    padding: 20px;
+    border-radius: 30px;
+  }
