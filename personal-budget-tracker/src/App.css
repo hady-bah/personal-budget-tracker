@@ -13,6 +13,17 @@
   overflow-y: auto;
 }
 
+#sectionTitle{
+  color: rgb(29, 29, 29);
+  font-size: 30px;
+  font-family: fantasy;
+  background-color: #8484ab;
+  border-radius: 30px;
+  display: inline-block; 
+  padding: 8px;
+  
+}
+
 a{
   display: flex;
   justify-content: center;
@@ -23,22 +34,16 @@ a{
   padding-bottom: 10px;
 }
 
-h1{
-  color: rgb(255, 255, 255);
-  font-family: garamond;
-  text-shadow: 0.5px 0.5px 10px rgb(109, 88, 4);
-}
-
 .logo {
-  height: 6em;
+  height: 5em;
   will-change: filter;
   transition: filter 300ms;
   animation: spin 10s linear infinite;
 }
 
-.logo.moneyway:hover {
+/* .logo.symbol:hover {
   filter: drop-shadow(0 0 2em #8484ab);
-}
+} */
 
 @keyframes spin {
   from {
@@ -49,6 +54,40 @@ h1{
   }
 }
 
+/* body{
+  background-image:url("") ;
+} */
+
+#newTransaction{
+  background-color: rgb(29, 29, 29);
+  width: 250px;
+  border-radius: 30px;
+  padding: 30px;
+}
+#amount-input{
+  background-color: #8484ab;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: fantasy;
+  margin-bottom: 15px;
+}
+#desc-input{
+  background-color: #8484ab;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: fantasy;
+  margin-bottom: 15px;
+}
+#date-input{
+  background-color: #8484ab;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 15px;
+  /* font-family: fantasy; */
+  /* color: white; */
+}
 
 
 
