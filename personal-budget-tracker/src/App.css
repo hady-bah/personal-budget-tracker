@@ -18,7 +18,7 @@
   font-size: 30px;
   font-family: fantasy;
   background-color: #8484ab;
-  border-radius: 30px;
+  border-radius: 10px;
   display: inline-block; 
   padding: 8px;
   
@@ -63,9 +63,14 @@ a{
   width: 250px;
   border-radius: 30px;
   padding: 30px;
+  margin-left: 550px; 
+  
+
 }
+
+
 #amount-input{
-  background-color: #8484ab;
+  background-color: #c7c7e1;
   border-radius: 30px;
   padding: 10px;
   font-size: 20px;
@@ -73,7 +78,7 @@ a{
   margin-bottom: 15px;
 }
 #desc-input{
-  background-color: #8484ab;
+  background-color: #c7c7e1;
   border-radius: 30px;
   padding: 10px;
   font-size: 20px;
@@ -81,12 +86,21 @@ a{
   margin-bottom: 15px;
 }
 #date-input{
-  background-color: #8484ab;
+  background-color: #c7c7e1;
   border-radius: 30px;
   padding: 10px;
   font-size: 15px;
-  /* font-family: fantasy; */
-  /* color: white; */
+  font-family: fantasy;
+  color: gray; 
+}
+#add{
+  background-color: green;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 15px;
+  font-family: fantasy;
+  margin-left: 30px;
+  border: none;
 }
 
 

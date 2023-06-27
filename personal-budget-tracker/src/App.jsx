@@ -31,6 +31,7 @@ function App() {
         <input type="text" id = "amount-input" placeholder="$"/>
         <input type="text" id = "desc-input" placeholder="description"/>
         <input type="date" id = "date-input"/>
+        <button id="add">Add</button>
       </form>
     </div>
     
