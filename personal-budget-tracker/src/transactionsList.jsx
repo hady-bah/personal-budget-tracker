@@ -5,7 +5,7 @@ export default function TransactionsList({ transactions, onDelete }) {
   const { amount, description, date } = transactions;
 
   const handleDelete = () => {
-    onDelete(transactions); // Pass the transaction to the onDelete handler
+    onDelete(transactions); 
   };
 
   return (
