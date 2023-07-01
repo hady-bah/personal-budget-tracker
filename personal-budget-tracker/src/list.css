@@ -24,6 +24,7 @@
   }
 
   #delete{
+    cursor: pointer;
     margin-left: 10px;
     text-align: center;
     background-color: rgb(204, 170, 35);

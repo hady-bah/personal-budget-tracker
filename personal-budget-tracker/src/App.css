@@ -24,7 +24,7 @@
   
 }
 
-a{
+nav{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,6 +102,7 @@ a{
   color: gray; 
 }
 #add{
+  cursor: pointer;
   background-color: green;
   padding: 10px;
   font-size: 15px;
@@ -110,6 +111,15 @@ a{
   margin-left: 30px;
   border: none;
 }
+
+#ChatBudgetBuddy{
+  background-color: rgb(29, 29, 29);
+  width: 400px;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+
 
 
 

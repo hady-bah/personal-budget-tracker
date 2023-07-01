@@ -2,8 +2,12 @@ import React, { useState } from 'react'
 import './App.css'
 import TransactionsList from './transactionsList'
 import Logo from './Logo.png';
+import ChatGPT from './components/ChatGPT';
+
 
 function App() {
+
+
   const [transactions, setTransactions] = useState([]);
 
   const handleDelete = (index) => {
@@ -36,9 +40,9 @@ function App() {
   return (
     <>
       <div className="header">
-        <a href="https://github.com/hady-bah/personal-budget-tracker/blob/main/README.md">
+        <nav>
           <img className="logo symbol" src={Logo} alt="logo" />
-        </a>
+        </nav>
       </div>
 
       <div className="sidebar">
@@ -61,8 +65,9 @@ function App() {
           <button type="submit" id="add">Add</button>
         </form>
       </div>
+
     </>
-  )
+  );
 }
 
 export default App;
