@@ -1,19 +1,22 @@
 {
-  "posts": [
+  "transactions": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "id": 12345,
+      "amount": 5.99,
+      "description": "Apple Music",
+      "date": "2023-06-30"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "amount": "700",
+      "description": "Rent",
+      "date": "2023-07-04",
+      "id": 12346
+    },
+    {
+      "amount": "14.99",
+      "description": "Uber Eats",
+      "date": "2023-07-02",
+      "id": 12347
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

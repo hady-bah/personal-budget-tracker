@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css'
 import TransactionsList from './transactionsList'
 import Logo from './Logo.png';
@@ -10,6 +10,27 @@ function App() {
 
   const [transactions, setTransactions] = useState([]);
 
+  //fetch data from db.json
+  useEffect(() => {
+    let ignore = false;
+
+    async function fetchTransactions() {
+      const response = await fetch('http://localhost:8000/transactions');
+      const transactions = await response.json();
+      if(!ignore) {
+        setTransactions(transactions);
+      }
+      return transactions;
+    }
+    
+    fetchTransactions();
+
+    return () => {
+      ignore = true;
+    }
+  }, []);
+
+  //delete event
   const handleDelete = (index) => {
     setTransactions((prevTransactions) => {
       const updatedTransactions = [...prevTransactions];
@@ -18,7 +39,8 @@ function App() {
     });
   };
 
-  const handleAdd = (event) => {
+  //add event
+  const handleAdd = async (event) => {
     event.preventDefault();
     const amountInput = document.getElementById('amount-input');
     const descInput = document.getElementById('desc-input');
@@ -30,11 +52,20 @@ function App() {
       date: dateInput.value,
     };
 
+    const response = await fetch("http://localhost:8000/transactions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newTransaction),
+    });
+
     setTransactions((prevTransactions) => [...prevTransactions, newTransaction]);
 
     amountInput.value = '';
     descInput.value = '';
     dateInput.value = '';
+
   };
 
   return (
