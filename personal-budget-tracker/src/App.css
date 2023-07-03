@@ -130,6 +130,19 @@ nav{
   font-family: fantasy;
 }
 
+#homeLink{
+  color: rgb(29, 29, 29);
+  font-size: 20px;
+  font-family: fantasy;
+  background-color: #8484ab;
+  border-radius: 5px;
+  display: inline-block; 
+  padding: 8px;
+  margin-right: 15px;
+  margin-left: 25px;
+  
+}
+
 
 
 
