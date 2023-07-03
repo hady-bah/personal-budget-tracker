@@ -31,12 +31,30 @@ function App() {
   }, []);
 
   //delete event
-  const handleDelete = (index) => {
-    setTransactions((prevTransactions) => {
-      const updatedTransactions = [...prevTransactions];
-      updatedTransactions.splice(index, 1);
-      return updatedTransactions;
-    });
+  const handleDelete = async (index) => {
+    const transactionToDelete = transactions[index];
+  
+    try {
+      // delete request
+      const response = await fetch(`http://localhost:8000/transactions/${transactionToDelete.id}`, {
+        method: "DELETE",
+      });
+  
+      if (!response.ok) {
+        // handle if request is not successfull
+        throw new Error("Failed to delete transaction");
+      }
+  
+      // update 
+      setTransactions((prevTransactions) => {
+        const updatedTransactions = [...prevTransactions];
+        updatedTransactions.splice(index, 1);
+        return updatedTransactions;
+      });
+    } catch (error) {
+      // handles any errors 
+      console.error(error);
+    }
   };
 
   //add event
@@ -59,6 +77,11 @@ function App() {
       },
       body: JSON.stringify(newTransaction),
     });
+
+    if (!response.ok) {
+      // handle if request is not successfull
+      throw new Error("Failed to add transaction");
+    }
 
     setTransactions((prevTransactions) => [...prevTransactions, newTransaction]);
 
