@@ -73,26 +73,34 @@ function App() {
       date: dateInput.value,
     };
 
-    const response = await fetch("http://localhost:8000/transactions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newTransaction),
-    });
+    try {
+      const response = await fetch('http://localhost:8000/transactions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newTransaction),
+      });
 
-    if (!response.ok) {
-      // handle if request is not successfull
-      throw new Error("Failed to add transaction");
+      if (!response.ok) {
+        throw new Error('Failed to add transaction');
+      }
+
+      const addedTransaction = await response.json();
+
+      setTransactions((prevTransactions) => [
+        ...prevTransactions,
+        addedTransaction,
+      ]);
+
+      amountInput.value = '';
+      descInput.value = '';
+      dateInput.value = '';
+    } catch (error) {
+      console.error(error);
     }
-
-    setTransactions((prevTransactions) => [...prevTransactions, newTransaction]);
-
-    amountInput.value = '';
-    descInput.value = '';
-    dateInput.value = '';
-
   };
+
 
   return (
     <>
