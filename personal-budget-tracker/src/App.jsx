@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './App.css'
 import TransactionsList from './transactionsList'
 import Navbar from './Navbar';
-import {MdNoteAdd} from "react-icons/md"
+import {IoMdAddCircle} from "react-icons/io"
 import Logo from './Logo.png';
 import ChatGPT from './components/ChatGPT';
 
@@ -126,7 +126,7 @@ function App() {
           <input type="text" id="desc-input" placeholder="description" />
           <input type="date" id="date-input" />
           <button type="submit" id="add">
-            <MdNoteAdd style={{ fontSize: "23px" }}/>
+            <IoMdAddCircle style={{ fontSize: "28px" }}/>
           </button>
         </form>
       </div>

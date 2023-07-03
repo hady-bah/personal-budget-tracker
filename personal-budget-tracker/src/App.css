@@ -103,8 +103,9 @@ nav{
 }
 #add{
   cursor: pointer;
-  background-color: green;
-  padding: 2px;
+  color: green;
+  background-color: rgb(29, 29, 29);
+  padding: 0px;
   font-size: 15px;
   border-radius: 4px;
   font-family: fantasy;

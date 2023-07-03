@@ -14,7 +14,7 @@ export default function TransactionsList({ transactions, onDelete }) {
       <p id="amount">
         $ {amount} <span className="date">{date}</span>
         <button id="delete" onClick={handleDelete}>
-          <MdDeleteForever style={{ fontSize: "18px" }}/>
+          <MdDeleteForever style={{ fontSize: "22px" }}/>
         </button>
       </p>
       <p id="description">{description}</p>

@@ -1,3 +1,5 @@
+//intergrating Chat GPT for AI chat assistance in App for users
+
 import React, { useState } from "react";
 import axios from "axios";
 export default function ChatGPT() {
