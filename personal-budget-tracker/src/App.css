@@ -38,6 +38,7 @@ nav{
   align-items: center;
   gap: 2rem;
   padding: 0 1rem;
+  margin-bottom: 25px;
 }
 
 
@@ -159,6 +160,15 @@ nav{
   background-color: #8484ab;
   border-radius: 15px;
 }
+
+#homeTitle{
+  padding-top: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy;
+}
+
+
 
 
 
