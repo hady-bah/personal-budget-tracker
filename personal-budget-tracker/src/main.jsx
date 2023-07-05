@@ -11,6 +11,8 @@ import {
   createRoutesFromElements,
 } from "react-router-dom"
 
+import ChatGPT from './ChatGPT.jsx'
+
 import RootLayout from './RootLayout.jsx'
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -20,6 +22,7 @@ const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<RootLayout/>}>
   <Route path="transactions" element={<App/>}/>
   <Route index element={<Home/>}/>
+  <Route path="chatGPT" element={<ChatGPT/>}/>
   </Route>
   
 ));
