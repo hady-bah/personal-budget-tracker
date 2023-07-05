@@ -5,12 +5,18 @@ const Navbar = () =>{
     return(
     <nav>
         <div id = "logoPlace">
+          <a href="/">
             <img className="logo symbol" src={Logo} alt="logo" />
+          </a>
         </div>
-        <div className="links">
+        <ul className="links">
+          <li id="link">
             <a href="/" id="homeLink">Home</a>
+          </li>
+          <li id="link">
             <a href="/ChatGPT" id="homeLink">Chat</a>
-        </div>
+          </li>
+        </ul>
     </nav>
 
     );

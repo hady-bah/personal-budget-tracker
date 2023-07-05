@@ -9,7 +9,8 @@
   top: 5;
   height: 75%;
   padding: 20px;
-  border-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
   overflow-y: auto;
 }
 
@@ -32,10 +33,17 @@ nav{
   border-radius: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
 }
 
+
 .logo {
-  height: 5em;
+  padding: 10px;
+  height: 4.5em;
   will-change: filter;
   transition: filter 300ms;
   animation: spin 10s linear infinite;
@@ -128,20 +136,30 @@ nav{
 
 .links{
   font-family: fantasy;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
 }
 
 #homeLink{
-  color: rgb(29, 29, 29);
+  color: white;
   font-size: 20px;
   font-family: fantasy;
-  background-color: #8484ab;
   border-radius: 5px;
   display: inline-block; 
   padding: 8px;
   margin-right: 15px;
   margin-left: 25px;
-  
+  text-decoration: none;
 }
+
+#link:hover{
+  background-color: #8484ab;
+  border-radius: 15px;
+}
+
 
 
 

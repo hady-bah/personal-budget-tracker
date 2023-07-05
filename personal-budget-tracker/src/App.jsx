@@ -126,7 +126,7 @@ function App() {
           <input type="text" id="desc-input" placeholder="description" />
           <input type="date" id="date-input" />
           <button type="submit" id="add">
-            <IoMdAddCircle style={{ fontSize: "28px" }}/>
+            <IoMdAddCircle style={{ fontSize: "25px" }}/>
           </button>
         </form>
       </div>

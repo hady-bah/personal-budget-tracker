@@ -42,14 +42,13 @@ export default function ChatGPT() {
             onChange={handlePrompt}
           />
         </div>{" "}
-        {/* <button className="btn btn-accept w-100" type="submit">
+        <button className="btn btn-accept w-100" type="submit">
           Go
-        </button> */}
+        </button>
       </form>
       <div className="bg-darkGreen  mt-2 p-1 border-5">
         <p>
-          {/* {response ? response : "Ask me anything..."} */}
-          {response}
+          {response ? response : "Ask me anything..."}
         </p>
       </div>
     </div>
