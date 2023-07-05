@@ -21,7 +21,7 @@ const Navbar = () =>{
             <Link to="transactions" id="aLink">Transactions</Link>
           </li>
           <li id="link">
-            <Link to="chatGPT" id="aLink">Chat</Link>
+            <Link to="chatGPT" id="aLink">Budget Buddy A.I.</Link>
           </li>
         </ul>
     </nav>

@@ -2,7 +2,7 @@
   padding-bottom: 20px;
 }
 .sidebar {
-  width: 225px;
+  width: 250px;
   background-color: rgb(29, 29, 29);
   position: fixed;
   right: 0px;
@@ -21,8 +21,10 @@
   background-color: #8484ab;
   border-radius: 10px;
   display: inline-block; 
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
   padding: 8px;
-  
 }
 
 nav{
@@ -39,6 +41,7 @@ nav{
   gap: 2rem;
   padding: 0 1rem;
   margin-bottom: 25px;
+
 }
 
 
@@ -146,7 +149,7 @@ nav{
 }
 
 #aLink{
-  color: white;
+  color: #c7c7e1;
   font-size: 20px;
   font-family: fantasy;
   border-radius: 5px;
@@ -155,12 +158,13 @@ nav{
   margin-right: 15px;
   margin-left: 25px;
   text-decoration: none;
+  border: 2px solid #c7c7e1;
 }
 
-#link:hover{
+
+/* #link:hover{
   background-color: #8484ab;
-  border-radius: 15px;
-}
+} */
 
 #homeTitle{
   padding-top: 20px;
