@@ -164,8 +164,14 @@ nav{
 #homeTitle{
   padding-top: 20px;
   text-align: center;
-  font-size: 40px;
-  font-family: fantasy;
+  font-size: 60px;
+  font-family: 'Matrix', sans-serif;
+  color: rgb(29, 29, 29);
+  background-color: #8484ab;
+  border-radius: ;
+}
+#powered{
+  font-size: 20px;
 }
 
 

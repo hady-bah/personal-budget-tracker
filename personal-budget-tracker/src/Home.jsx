@@ -6,7 +6,10 @@ export default function Home(){
 
     return(
         <>
-            <h1 id= "homeTitle">BudgetBuddy</h1>
+            <h1 id= "homeTitle">BUDGET BUDDY
+            <p id = "powered">Powered By A.I.</p>
+            </h1>
+            
         </>
 
     );
