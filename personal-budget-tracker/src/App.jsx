@@ -3,10 +3,9 @@ import './App.css'
 import TransactionsList from './transactionsList'
 import Navbar from './Navbar';
 import {IoMdAddCircle} from "react-icons/io"
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import Logo from './Logo.png';
-import ChatGPT from './components/ChatGPT';
-
-
+import TestPage from './testPage';
 
 function App() {
 
@@ -104,9 +103,14 @@ function App() {
 
   return (
     <>
+
       <div className="header">
         <Navbar/>
       </div>
+
+      <Routes>
+        <Route exact path="/testPage" element={<TestPage/>}/>
+      </Routes>
 
       <div className="sidebar">
         <p id="sectionTitle">Transactions</p>

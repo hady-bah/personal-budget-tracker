@@ -1,5 +1,6 @@
 import "./App.css"
 import Logo from './Logo.png';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
 const Navbar = () =>{
     return(
@@ -11,10 +12,10 @@ const Navbar = () =>{
         </div>
         <ul className="links">
           <li id="link">
-            <a href="/" id="homeLink">Home</a>
+            <Link to="/" id="aLink">Home</Link>
           </li>
           <li id="link">
-            <a href="/ChatGPT" id="homeLink">Chat</a>
+            <Link to="/testPage" id="aLink">Test</Link>
           </li>
         </ul>
     </nav>
