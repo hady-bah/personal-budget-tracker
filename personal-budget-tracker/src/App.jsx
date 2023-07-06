@@ -121,7 +121,7 @@ function App() {
       <div id="newTransaction">
         <form onSubmit={handleAdd}>
           <p id="sectionTitle">New Transaction</p>
-          <input type="text" id="amount-input" placeholder="$" />
+          <input type="number" id="amount-input" placeholder="$" />
           <input type="text" id="desc-input" placeholder="description" />
           <input type="date" id="date-input" />
           <button type="submit" id="add">

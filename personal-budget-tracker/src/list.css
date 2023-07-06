@@ -62,14 +62,16 @@
     margin-bottom: 5px;
 
   }
-  #editinputDate{
+  
+#editinputDate{
     background-color: rgb(29, 29, 29);
     color: white; 
     font-size: 15px;
     margin-bottom: 5px;
     border: none;
+    font-family: fantasy;
+    margin-right: 15px;
   }
-
   #save{
     color: green;
     cursor: pointer;

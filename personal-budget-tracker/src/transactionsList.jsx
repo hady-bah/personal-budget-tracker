@@ -29,7 +29,7 @@ export default function TransactionsList({ transactions, onDelete }) {
     };
 
     try {
-      // Make an API call to save the edited transaction
+      // making an API call to save the edited transaction
       const response = await fetch(`http://localhost:8000/transactions/${id}`, {
         method: "PUT",
         headers: {
@@ -42,7 +42,7 @@ export default function TransactionsList({ transactions, onDelete }) {
         throw new Error("Failed to save transaction");
       }
 
-      // Update the state or perform any necessary actions after successful save
+      window.location.reload();//reloading page  
 
       setIsEditing(false);
     } catch (error) {
@@ -61,9 +61,9 @@ export default function TransactionsList({ transactions, onDelete }) {
     <div id="list">
       {isEditing ? (
         <>
-          <input id="editinputAmount" type="text" value={editedAmount} onChange={(e) => setEditedAmount(e.target.value)} />
+          <input id="editinputAmount" type="number" value={editedAmount} onChange={(e) => setEditedAmount(e.target.value)} />
           <input id="editinputDesc" type="text" value={editedDescription} onChange={(e) => setEditedDescription(e.target.value)} />
-          <input id="editinputDate" type="text" value={editedDate} onChange={(e) => setEditedDate(e.target.value)} />
+          <input id="editinputDate" type="date" value={editedDate} onChange={(e) => setEditedDate(e.target.value)} />
           <button id ="save" onClick={handleSave}>
             <RiSave3Fill style={{ fontSize: "22px" }}/>
           </button>

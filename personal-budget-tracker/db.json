@@ -2,15 +2,15 @@
   "transactions": [
     {
       "id": 1,
-      "amount": "7",
+      "amount": "5.99",
       "description": "Apple Music",
       "date": "2023-07-12"
     },
     {
-      "amount": "800",
+      "id": 2,
+      "amount": "900",
       "description": "Rent",
-      "date": "2023-07-30",
-      "id": 2
+      "date": "2023-07-30"
     },
     {
       "amount": "14.99",

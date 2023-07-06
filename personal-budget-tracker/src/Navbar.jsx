@@ -10,7 +10,7 @@ const Navbar = () =>{
             <img className="logo symbol" src={Logo} alt="logo" />
           </Link>
           <h1 id= "homeTitle">BUDGET BUDDY
-            <p id = "powered">Powered By A.I.</p>
+            <p id = "powered">POWERED BY A.I.</p>
         </h1> 
         </div>
         <ul className="links">
