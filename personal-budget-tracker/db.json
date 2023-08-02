@@ -2,7 +2,7 @@
   "transactions": [
     {
       "id": 1,
-      "amount": "5.99",
+      "amount": "6",
       "description": "Apple Music",
       "date": "2023-07-12"
     },
@@ -13,22 +13,25 @@
       "date": "2023-07-30"
     },
     {
+      "id": 3,
       "amount": "14.99",
       "description": "Uber Eats",
-      "date": "2023-07-01",
-      "id": 3
+      "date": "2023-07-01"
+    
     },
     {
+      "id": 4,
       "amount": "4.99",
       "description": "Spotify",
-      "date": "2023-07-26",
-      "id": 4
+      "date": "2023-07-26"
+      
     },
     {
+      "id": 5,
       "amount": "49.98",
       "description": "Amazon",
-      "date": "2023-07-11",
-      "id": 5
+      "date": "2023-07-11"
+      
     }
   ]
 }
